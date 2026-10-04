@@ -208,24 +208,31 @@ h6 {
   line-height: 1;
 }
 
-.header .logo img {
-  margin-right: 15px;
-  border: none;
-  border-radius: 0;
-  box-shadow: none;
-  height: auto;
-  max-width: 100%;
+.header .logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    max-width: 100%;
 }
 
-.header .logo1 img {
-  margin-right: 15px;
-  border: none;
-  border-radius: 0;
-  box-shadow: none;
-  height: auto;
-  max-width: 100%;
-  margin-top: auto;
+.header .logo img {
+    margin-right: 15px;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+    height: auto;
+    max-width: 100%;
 }
+
+.logo-main {
+    width: 100px;
+}
+
+.logo-text {
+    width: 300px;
+}
+
+
 
 .header .logo h1 {
   font-size: 30px;
@@ -4882,3 +4889,37 @@ section,
 /*--------------------------------------------------------------
 # Starter Section Section
 --------------------------------------------------------------*/
+@media (max-width: 768px) {
+    .header .logo {
+        gap: 5px;
+    }
+
+    .logo-main {
+        width: 60px;
+    }
+
+    .logo-text {
+        width: 180px;
+    }
+}
+.electroimg {
+    max-height: 100%;
+    max-width: 100%;
+    width: auto;
+    height: auto;
+    
+}
+.electrocontainer{
+  display: flex;
+  justify-content: center;
+}
+.product-column {
+    height: 900px;
+}
+.loading,
+.error-message,
+.sent-message {
+    display: none;
+    margin-bottom: 15px;
+}
+
